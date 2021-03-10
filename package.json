@@ -1,0 +1,25 @@
+{
+  "name": "beer30",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelhmoore/beer30.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michaelhmoore/beer30/issues"
+  },
+  "homepage": "https://github.com/michaelhmoore/beer30#readme",
+  "dependencies": {
+    "nodemon": "^2.0.7",
+    "pg": "^8.5.1",
+    "sequelize": "^6.5.0"
+  }
+}
