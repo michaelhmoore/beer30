@@ -7,6 +7,9 @@ const es6Renderer = require('express-es6-template-engine');
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const contactRouter = require('./routes/contact');
+const six_makerRouter = require('./routes/six_maker');
+
+
 
 const app = express();
 
@@ -23,5 +26,7 @@ app.set('view engine', 'html');
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/contact', contactRouter);
+app.use('/six_maker', six_makerRouter);
+
 
 module.exports = app;
