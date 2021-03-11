@@ -1,12 +1,10 @@
 var express = require('express');
+const app = require('../app');
 var router = express.Router();
 
-/* GET users listing. */
+/* GET home page. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.render('contact', { title: 'Beer30' });
 });
 
 module.exports = router;
-
-
-
