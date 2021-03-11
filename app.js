@@ -1,4 +1,5 @@
 const express = require('express');
+const session = require('express-session')
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
@@ -17,6 +18,17 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(
+    session({
+        secret: 'secret',
+        resave: false,
+        saveUninitialized: true,
+        cookie: {
+            secure: false,
+            maxAge: 2592000,
+        }
+    })
+)
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.engine('html', es6Renderer);
