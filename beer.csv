@@ -1,0 +1,37 @@
+id,name,image,brewery,description,type
+1,Guinness Baltimore Blonde,https://products2.imgix.drizly.com/ci-guinness-blonde-american-lager-22a826f187797a21.jpeg?auto=format%2Ccompress&fm=jpg&q=20,Guinness Open Gate Brewery,"Crisp, Fresh, Grainy, Grassy ABV 5%",American Style Lager
+2,New Belguim Fat Tire Ale ,https://products1.imgix.drizly.com/ci-new-belgium-fat-tire-b4e1817093500c47.jpeg?auto=format%2Ccompress&fm=jpg&q=20,New Belgium Brewing Company,"Balanced, Biscuit, Malty, Smooth ABV 5.2%",Amber / Red Ale
+3,Lagunitas IPA,https://products3.imgix.drizly.com/ci-lagunitas-ipa-ea3c01b7b5a23bd8.png?auto=format%2Ccompress&fm=jpg&q=20,Lagunitas Brewing Company ,"Hoppy, Bitter, Floral, Citrus ABV 6.2%
+",IPA
+4,Victory Golden Monkey,https://products2.imgix.drizly.com/ci-victory-golden-monkey-2b2a18f9fb3bae19.png?auto=format%2Ccompress&fm=jpg&q=20,Victory brewing Company,"Fruity, Spicy, Yeasty, Floral ABV 9.5%",Tripel
+5,Kona Big Wave Golden Ale,https://products1.imgix.drizly.com/ci-kona-big-wave-golden-ale-c835921c52b5e732.jpeg?auto=format%2Ccompress&fm=jpg&q=20,Kona Beer Company,"Honey, Malty, Sweet  ABV 4.4%",Golden/ Blonde Ale
+6,Stone IPA,https://products1.imgix.drizly.com/ci-stone-ipa-4f94fc4e6ce01683.jpeg?auto=format%2Ccompress&fm=jpg&q=20,Stone Brewing & Compnay,"Hoppy, Malty, Bright, Citrus ABV 6.9%",IPA
+7,Left Hand Milk Stout Nitro,https://products2.imgix.drizly.com/ci-left-hand-milk-stout-nitro-797334bb857b95e0.png?auto=format%2Ccompress&fm=jpg&q=20,Eperience America Brews,"Balanced, Creamy, Chocolate, Smooth ABV 6%",Milk Stout
+8,North Coast Old Rasputin Russian Imperial Stout,https://products0.imgix.drizly.com/ci-north-coast-old-rasputin-russian-imperial-stout-b937a7f3444b3e90.jpeg?auto=format%2Ccompress&fm=jpg&q=20,North Coast Brewing Company,"Rich, Roasted, Coffee, Chocolate ABV 9%
+",Imperial Stout
+9,Flying Dog Raging Bitch,https://products1.imgix.drizly.com/ci-flying-dog-raging-bitch-045e6ec3b8b40d75.jpeg?auto=format%2Ccompress&fm=jpg&q=20,Flyin Dog Productions,"Bready, Pine, Floral ABV 8.3%
+",IPA
+10,"ACE Pineapple Cider
+",https://products3.imgix.drizly.com/ci-ace-pineapple-cider-864bfd3accc1d84f.jpeg?auto=format%2Ccompress&fm=jpg&q=20,Ace Cider,"Sweet, Apple, Tropical Fruit ABV 5%",Cider
+11,Brooklyn Bel Air Sour Ale,https://products0.imgix.drizly.com/ci-brooklyn-bel-air-sour-ale-ea384aec638602a3.png?auto=format%2Ccompress&fm=jpg&q=20,Brooklyn Brewery ,"Bright, Crisp, Tart, Tropical, Tropical Fruit ABV 5.8%
+",Sour/Wild Ale
+12,Magic Hat #9,https://products1.imgix.drizly.com/ci-magic-hat-9-802dd7b0d9f7dd07.jpeg?auto=format%2Ccompress&fm=jpg&q=20,Magic Hat Brewing,"Fruity, Stone Fruit, Dried Fruit, Sweet ABV 5.1%
+",Pale Ale
+13,Breckenridge Brewery Vanilla Porter,https://products1.imgix.drizly.com/ci-breckenridge-brewery-vanilla-porter-4bf0254ac650487e.png?auto=format%2Ccompress&fm=jpg&q=20,Breckenridge Brewery ,"Chocolate, Roasted, Vanilla  ABV 5.4%",Porter
+14,Samuel Smith Organic Chocolate Stout,https://products3.imgix.drizly.com/ci-samuel-smith-organic-chocolate-stout-d8aa67a386a1ecbe.jpeg?auto=format%2Ccompress&fm=jpg&q=20,Samuel Smith ,"Smooth, Chocolate, Creamy, Mocha ABV 5%",Milk Stout
+15,Einstok Icelandic White Ale,https://products2.imgix.drizly.com/ci-einstok-icelandic-white-ale-33718b2bdf65db9e.jpeg?auto=format%2Ccompress&fm=jpg&q=20,Eïnstök Beer Company,"Citrus, Yeasty, Spicy, Smooth ABV 5.2%",Witbier
+16,Samuel Adams Cherry Wheat Beer,https://products2.imgix.drizly.com/ci-samuel-adams-cherry-wheat-77f300e09001513b.jpeg?auto=format%2Ccompress&fm=jpg&q=20,Samuel Adams Brewing,"Flavored, Red Fruit, Sweet ABV  ABV 5.4",Fruit Beer
+17,Sierra Nevada Seasonal,https://products1.imgix.drizly.com/ci-sierra-nevada-seasonal-394132d8068024c0.jpeg?auto=format%2Ccompress&fm=jpg&q=20,Sierra Nevada Brews,"Dark, Roasted, Spicey, Malty ABV 5%",Seasonal Beer 
+18,Omission Lager,https://products1.imgix.drizly.com/ci-omission-lager-62d2aaf63bc9243b.jpeg?auto=format%2Ccompress&fm=jpg&q=20,Omission ,"Fruity, Hoppy ABV ABV 4.6%",Lager
+19,Founders Dirty Bastard,https://products0.imgix.drizly.com/ci-founders-dirty-bastard-882ad3eaba38149d.png?auto=format%2Ccompress&fm=jpg&q=20,Founders Brewing Company,"Caramel, Dark Fruit, Sweet, Fig ABV 8.5%",Scotch Heavy/ Wee Heavy
+20,UFO White,https://products3.imgix.drizly.com/ci-harpoon-ufo-white-3e217dd9e4946b67.png?auto=format%2Ccompress&fm=jpg&q=20,UFO Crafts,"Citrus, Herbal, Smooth, Balanced ABV 4.8%",Wheat Ale
+21,Omission Pale Ale,https://products1.imgix.drizly.com/ci-omission-pale-ale-f29c5215b6c5cda0.jpeg?auto=format%2Ccompress&fm=jpg&q=20,Omission ,"Hoppy, Caramel, Honey ABV 5.8%",American Pale Ale
+22,Summit Extra Pale Ale,https://products2.imgix.drizly.com/ci-summit-extra-pale-ale-afe31290e985e2aa.png?auto=format%2Ccompress&fm=jpg&q=20,Summit Brewing,"Caramel, Malty, Bitter ABV 5.2%",Extra Pale Ale
+23,Real Ale Devil's Backbone,https://products3.imgix.drizly.com/ci-real-ale-devils-backbone-0eaf280e0b60929e.jpeg?auto=format%2Ccompress&fm=jpg&q=20,Real Ale Brewing Company,"Sweet, Strong, Stone Fruit, Bold ABV 8.1%",Belgian Style Ale
+24,Samuel Adams Winter Lager,https://products2.imgix.drizly.com/ci-samuel-adams-winter-lager-4fb2d8b52336835f.jpeg?auto=format%2Ccompress&fm=jpg&q=20,Samuel Adams Brewing,"Gusty, Spicy, Ginger ABV 5.6%",Bock
+25,Corona Familiar,https://products1.imgix.drizly.com/ci-corona-familiar-15a6e844a086a632.jpeg?auto=format%2Ccompress&fm=jpg&q=20,Corona Crown Imports,"Bright, Dry, Grainy ABV 4.8%",Pale Lager
+26,2 Towns The Bad Apple,https://products0.imgix.drizly.com/ci-2-towns-the-bad-apple-79aa3a5d1a2a29b4.jpeg?auto=format%2Ccompress&fm=jpg&q=20,2 Towns Cider House,"Acidic, Apple, Bold, Honey, Oak, Woody ABV 10.5%",Cider
+27,DuClaw Sweet Baby Jesus Porter,https://products0.imgix.drizly.com/ci-duclaw-sweet-baby-jesus-porter-8244a715c6afabf5.png?auto=format%2Ccompress&fm=jpg&q=20,DuClaw Drink Company ,"Bold, Chocolate, Coffee, Flavored, Malty, Nutty ABV 6.2%",Porter
+28,Shiner Ruby Redbird,https://products3.imgix.drizly.com/ci-shiner-ruby-redbird-dc976bbc5917c07d.png?auto=format%2Ccompress&fm=jpg&q=20,Shiner Brewing ,"Fruity, Flavored, Grapefruit ABV 4.1%",Fruit Beer
+29,SweetWater IPA,https://products2.imgix.drizly.com/ci-sweetwater-ipa-5f1d99341e9ce38f.jpeg?auto=format%2Ccompress&fm=jpg&q=20,Sweet Water Brewing Company,"Hoppy, Pine, Grapefruit, Dry ABV 6.3%",IPA
+30,Foster's Lager Beer,https://products2.imgix.drizly.com/ci-fosters-lager-e0beb054880a82ce.png?auto=format%2Ccompress&fm=jpg&q=20,Fosters' Brewing ,"Grainy, Dry, Crisp ABV 5%",Pale Lager
