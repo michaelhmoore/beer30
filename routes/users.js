@@ -37,6 +37,9 @@ router.post('/register', async (req, res) => {
     username: req.body.username,
     password: hash
   })
+
+  res.redirect('/');
+
   res.json(newUser)
 })
 
