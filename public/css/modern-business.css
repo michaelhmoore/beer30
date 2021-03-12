@@ -30,7 +30,7 @@ body {
   
 }
 .left-box{
-  /* background-color: blue; */
+  background-color: rgb(33, 146, 84);
   grid-column: span 2;
   height: 50vh;
 

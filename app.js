@@ -12,6 +12,7 @@ const apiRouter = require('./routes/api')
 const usersRouter = require('./routes/users');
 const contactRouter = require('./routes/contact');
 const six_makerRouter = require('./routes/six_maker');
+const aboutRouter = require('./routes/about')
 
 const app = express();
 
@@ -43,6 +44,7 @@ app.use('/api', apiRouter)
 app.use('/users', usersRouter);
 app.use('/contact', contactRouter);
 app.use('/six_maker', six_makerRouter);
+app.use('/about', aboutRouter);
 
 
 module.exports = app;
