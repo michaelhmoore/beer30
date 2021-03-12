@@ -24,6 +24,19 @@ router.get('/login', (req, res) => {
   })
 })
 
+// router.post('/login', (req, res) => {
+//   db.User.create({
+//     username: req.body.username,
+//     password: req.body.password
+//   })
+//     .then(user => {
+//       res.json(user);
+//     })
+//     .catch(error => {
+//       res.json(error.errors.map(e => e.message))
+//     })
+// })
+
               /* Register */
 router.post('/register', async (req, res) => {
   // check if user exists
@@ -52,10 +65,10 @@ router.post('/register', async (req, res) => {
     username: req.body.username,
     password: hash
   })
-
   res.redirect('/users/login');
 
   res.json(newUser)
+
 })
 
                 /* Login */
@@ -82,9 +95,16 @@ router.post('/login', async (req, res) => {
         locals: { error: "<h4 style='color:red;  '>Incorrect password. Please try again.</h4>" }
       });
     }
-    // req.sessions.user = user;
-    
     res.redirect('/');
+    
+    req.sessions.user = user;
+    
+})
+
+router.get('/logout', (req, res) => {
+  req.session.user = null;
+
+  res.redirect('/');
 })
 
 module.exports = router;
