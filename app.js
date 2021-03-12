@@ -8,6 +8,7 @@ const es6Renderer = require('express-es6-template-engine');
 const db = require('./models');
 
 const indexRouter = require('./routes/index');
+const apiRouter = require('./routes/api')
 const usersRouter = require('./routes/users');
 const contactRouter = require('./routes/contact');
 const six_makerRouter = require('./routes/six_maker');
@@ -39,6 +40,7 @@ app.set('views', 'templates');
 app.set('view engine', 'html');
 
 app.use('/', indexRouter);
+app.use('/api', apiRouter)
 app.use('/users', usersRouter);
 app.use('/contact', contactRouter);
 app.use('/six_maker', six_makerRouter);
