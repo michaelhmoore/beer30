@@ -61,13 +61,13 @@ router.post('/login', async (req, res) => {
     }
   });
     if (!user) {
-      return res.status(422).render( 'error', {
+      return res.status(404).render( 'error', {
         locals: { error: 'Couldn\'t find user with that username.' }
       });
     }
     const match = await bcrypt.compare(req.body.password, user.password)
     if (!match) {
-      return res.status(422).render( 'error', {
+      return res.status(401).render( 'error', {
         locals: { error: 'Incorrect password.' }
       });
     }
