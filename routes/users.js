@@ -9,11 +9,15 @@ const bcrypt = require('bcrypt')
 // });
 
 router.get('/register', (req, res) => {
-  res.render('register')
+  res.render('register', {
+    locals: { error: "" }
+  })
 })
 
 router.get('/login', (req, res) => {
-  res.render('login')
+  res.render('login', {
+    locals: { error: "" }
+  })
 })
 
               /* Register */
