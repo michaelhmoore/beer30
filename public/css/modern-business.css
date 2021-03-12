@@ -80,23 +80,22 @@ body {
   height: 25vh;
 
 }
-.beer-5{
+.beer-5 {
   grid-column: span 1;
   height: 25vh;
 
 }
-.beer-6{
+.beer-6 {
   grid-column: span 1;
   height: 25vh;
-
 }
 
-.beerImg{
+.beerImg {
   height: 150px;
   cursor: pointer;
 }
 
-a{
+a {
  color: black;
 }
 
