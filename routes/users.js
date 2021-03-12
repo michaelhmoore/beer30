@@ -12,7 +12,11 @@ router.get('/register', (req, res) => {
   res.render('register')
 })
 
-// register 
+router.get('/login', (req, res) => {
+  res.render('login')
+})
+
+              /* Register */
 router.post('/register', async (req, res) => {
   // check if user exists
   const users = await db.User.findAll({
@@ -38,9 +42,38 @@ router.post('/register', async (req, res) => {
     password: hash
   })
 
-  res.redirect('/');
+  res.redirect('/users/login');
 
   res.json(newUser)
+})
+
+                /* Login */
+// Look at error codes to make sure we have the right ones!
+router.post('/login', async (req, res) => {
+  if (!req.body.username || !req.body.password) {
+    return res.status(422).render( 'error', {
+      locals: { error: 'Please include all required fields.' }
+    });
+  }
+  const user = await db.User.findOne({
+    where: {
+      username: req.body.username
+    }
+  });
+    if (!user) {
+      return res.status(422).render( 'error', {
+        locals: { error: 'Couldn\'t find user with that username.' }
+      });
+    }
+    const match = await bcrypt.compare(req.body.password, user.password)
+    if (!match) {
+      return res.status(422).render( 'error', {
+        locals: { error: 'Incorrect password.' }
+      });
+    }
+    // req.sessions.user = user;
+    
+    res.redirect('/');
 })
 
 module.exports = router;
