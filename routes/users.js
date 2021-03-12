@@ -2,6 +2,8 @@ var express = require('express');
 var router = express.Router();
 const db = require('../models');
 const bcrypt = require('bcrypt')
+const partials = require('../partials')
+
 
 /* GET users listing. */
 // router.get('/', function (req, res, next) {
@@ -10,13 +12,15 @@ const bcrypt = require('bcrypt')
 
 router.get('/register', (req, res) => {
   res.render('register', {
-    locals: { error: "" }
+    locals: { error: "" },
+    partials
   })
 })
 
 router.get('/login', (req, res) => {
   res.render('login', {
-    locals: { error: "" }
+    locals: { error: "" },
+    partials
   })
 })
 
@@ -30,7 +34,7 @@ router.post('/register', async (req, res) => {
 // if user exists, send error
   if (users.length) {
     return res.status(422).render( 'register', {
-      locals: { error: "Username already in use." }
+      locals: { error: "<h4 style='color:red;  '>Username already in use. Please try again.</h4>" }
     });   
   }  
   // if does NOT exists, create user
@@ -59,7 +63,7 @@ router.post('/register', async (req, res) => {
 router.post('/login', async (req, res) => {
   if (!req.body.username || !req.body.password) {
     return res.status(422).render( 'login', {
-      locals: { error: 'Please include all required fields.' }
+      locals: { error: "<h4 style='color:red;  '>Please include all required fields.</h4>" }
     });
   }
   const user = await db.User.findOne({
@@ -69,13 +73,13 @@ router.post('/login', async (req, res) => {
   });
     if (!user) {
       return res.status(404).render( 'login', {
-        locals: { error: 'Couldn\'t find user with that username.' }
+        locals: { error: "<h4 style='color:red;  '>Couldn\'t find user with that username. Please try again.</h4>" }
       });
     }
     const match = await bcrypt.compare(req.body.password, user.password)
     if (!match) {
       return res.status(401).render( 'login', {
-        locals: { error: 'Incorrect password.' }
+        locals: { error: "<h4 style='color:red;  '>Incorrect password. Please try again.</h4>" }
       });
     }
     // req.sessions.user = user;
