@@ -9,11 +9,15 @@ const bcrypt = require('bcrypt')
 // });
 
 router.get('/register', (req, res) => {
-  res.render('register')
+  res.render('register', {
+    locals: { error: "" }
+  })
 })
 
 router.get('/login', (req, res) => {
-  res.render('login')
+  res.render('login', {
+    locals: { error: "" }
+  })
 })
 
               /* Register */
@@ -25,14 +29,17 @@ router.post('/register', async (req, res) => {
   })
 // if user exists, send error
   if (users.length) {
-    res.status(422).json({ error: "Username already in use" })   
-    return 
-}    
+    return res.status(422).render( 'register', {
+      locals: { error: "Username already in use." }
+    });   
+  }  
   // if does NOT exists, create user
   // check name, email, gamertag, pw
   // if not all included, send error
   if (!req.body.username || !req.body.password) {
-    return res.status(422).json({ error: "Please include all required fields" })
+    return res.status(422).render( 'register', {
+      locals: { error: "Please include all required fields." }
+    });
   }
   // hash password
   const hash = await bcrypt.hash(req.body.password, 10)
@@ -51,7 +58,7 @@ router.post('/register', async (req, res) => {
 // Look at error codes to make sure we have the right ones!
 router.post('/login', async (req, res) => {
   if (!req.body.username || !req.body.password) {
-    return res.status(422).render( 'error', {
+    return res.status(422).render( 'login', {
       locals: { error: 'Please include all required fields.' }
     });
   }
@@ -61,13 +68,13 @@ router.post('/login', async (req, res) => {
     }
   });
     if (!user) {
-      return res.status(404).render( 'error', {
+      return res.status(404).render( 'login', {
         locals: { error: 'Couldn\'t find user with that username.' }
       });
     }
     const match = await bcrypt.compare(req.body.password, user.password)
     if (!match) {
-      return res.status(401).render( 'error', {
+      return res.status(401).render( 'login', {
         locals: { error: 'Incorrect password.' }
       });
     }
