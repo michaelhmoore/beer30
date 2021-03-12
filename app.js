@@ -8,6 +8,7 @@ const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const contactRouter = require('./routes/contact');
 const six_makerRouter = require('./routes/six_maker');
+const aboutRouter = require('./routes/about')
 
 
 
@@ -27,6 +28,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/contact', contactRouter);
 app.use('/six_maker', six_makerRouter);
+app.use('/about', aboutRouter);
 
 
 module.exports = app;
