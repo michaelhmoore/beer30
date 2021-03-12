@@ -1,7 +1,8 @@
 var express = require('express');
 var router = express.Router();
 const db = require('../models');
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcrypt');
+const app = require('../app');
 
 /* GET users listing. */
 // router.get('/', function (req, res, next) {
@@ -19,6 +20,19 @@ router.get('/login', (req, res) => {
     locals: { error: "" }
   })
 })
+
+// router.post('/login', (req, res) => {
+//   db.User.create({
+//     username: req.body.username,
+//     password: req.body.password
+//   })
+//     .then(user => {
+//       res.json(user);
+//     })
+//     .catch(error => {
+//       res.json(error.errors.map(e => e.message))
+//     })
+// })
 
               /* Register */
 router.post('/register', async (req, res) => {
@@ -48,10 +62,10 @@ router.post('/register', async (req, res) => {
     username: req.body.username,
     password: hash
   })
-
   res.redirect('/users/login');
 
   res.json(newUser)
+
 })
 
                 /* Login */
@@ -78,9 +92,16 @@ router.post('/login', async (req, res) => {
         locals: { error: 'Incorrect password.' }
       });
     }
-    // req.sessions.user = user;
-    
     res.redirect('/');
+    
+    req.sessions.user = user;
+    
+})
+
+router.get('/logout', (req, res) => {
+  req.session.user = null;
+
+  res.redirect('/');
 })
 
 module.exports = router;
