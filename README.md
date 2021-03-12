@@ -1,29 +1,61 @@
-# Beer30 🍻
+# [Start Bootstrap - Modern Business](https://startbootstrap.com/template/modern-business/)
 
-# Description 📝
-Beer 30 is a project developed to try and suit the worlds craft beer drinkers needs to find the perfect beers for them. Custom six packs of their favorite beers can be chosen in just a few steps and by the time you know it your favorite beers will be shipped out and on their way to your door!
+[Modern Business](https://startbootstrap.com/template/modern-business/) is a multipurpose, full website template for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/). This template includes 17 unique HTML pages and a working PHP contact form.
 
-# Visuals 👀
-This project is coded with the front end development tools such as : HTML, CSS, Javascript and Bootstrap.
+## Preview
 
-# Usage 📲
-The pages functionality on the back end is one of the main goals of this project. Using back end languages such as: 
+[![Modern Business Preview](https://assets.startbootstrap.com/img/screenshots/templates/modern-business.png)](https://startbootstrap.github.io/startbootstrap-modern-business/)
 
-# Support 💻
-If there is any issues with funcitonality or issues that may need problem soling feel free to reach out to us on the repo or individually!
+**[View Live Preview](https://startbootstrap.github.io/startbootstrap-modern-business/)**
 
-# Roadmap🧗🏻‍♂️
-We would like to eventually be able to bring the consumers with more options of beers on a rotational basis. As well as be able to start providing the tweleve pack and thirty pack quantities of beer for sale. 
+## Status
 
-# Contributing✌️
-We are always looking to improve! If there is a way to make this project the best project it can be then we will always be open to ideas and new directions to take this project. Improvment and progression is always welcomed for projects and it sometimes takes another set of eyes to help push us into the next level!
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-modern-business/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/startbootstrap-modern-business.svg)](https://www.npmjs.com/package/startbootstrap-modern-business)
+[![Build Status](https://travis-ci.org/StartBootstrap/startbootstrap-modern-business.svg?branch=master)](https://travis-ci.org/StartBootstrap/startbootstrap-modern-business)
+[![dependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-modern-business/status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-modern-business)
+[![devDependencies Status](https://david-dm.org/StartBootstrap/startbootstrap-modern-business/dev-status.svg)](https://david-dm.org/StartBootstrap/startbootstrap-modern-business?type=dev)
 
-# Authors and acknowledgment🎓
-This project is possile thanks to the minds and coordination of the students at DigitalCrafts: Angel Deluna, Andrew Cochran, Kirk Bowman and Micheal Moore.
+## Download and Installation
 
-# License🎫
-For open source projects, say how it is licensed.
+To begin using this template, choose one of the following options to get started:
 
-# Project status📈
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template/modern-business/)
+* Install via npm: `npm i startbootstrap-modern-business`
+* Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-modern-business.git`
+* [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-modern-business)
 
+## Usage
+
+### Basic Usage
+
+After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+
+### Advanced Usage
+
+After installation, run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+
+You must have npm and Gulp installed globally on your machine in order to use these features.
+
+## Bugs and Issues
+
+Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-modern-business/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](https://startbootstrap.com/template/modern-business/).
+
+## About
+
+Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+
+* <https://startbootstrap.com>
+* <https://twitter.com/SBootstrap>
+
+Start Bootstrap was created by and is maintained by **[David Miller](https://davidmiller.io/)**.
+
+* <https://davidmiller.io>
+* <https://twitter.com/davidmillerhere>
+* <https://github.com/davidtmiller>
+
+Start Bootstrap is based on the [Bootstrap](https://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
+
+## Copyright and License
+
+Copyright 2013-2020 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-modern-business/blob/gh-pages/LICENSE) license.
