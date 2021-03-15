@@ -19,7 +19,7 @@ We would like to eventually be able to bring the consumers with more options of 
 We are always looking to improve! If there is a way to make this project the best project it can be then we will always be open to ideas and new directions to take this project. Improvment and progression is always welcomed for projects and it sometimes takes another set of eyes to help push us into the next level!
 
 # Authors and acknowledgment🎓
-This project is possile thanks to the minds and coordination of the students at DigitalCrafts: Angel Deluna, Andrew Cochran, Kirk Bowman and Micheal Moore.
+This project is possile thanks to the minds and coordination of the students at DigitalCrafts: Angel Deluna, Andrew Cochran, Kirk Bowman and Micheal Moore..
 
 # License🎫
 For open source projects, say how it is licensed.
