@@ -9,6 +9,7 @@
 </head>
 <body>
     <h2>Registration</h2>
+    <div>
      <form method="POST" action="/users/register"> 
     <p>
       <label for="username">Username</label>
@@ -24,8 +25,9 @@
     </p>
     <button type="submit">Register Account</button>
     </form>
-    <div class="error"><br>
-      ${error}
+    <div class="error">
+      ${error}</div>    
     </div>
+   
 </body>
 </html>

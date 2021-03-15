@@ -105,6 +105,20 @@
     </div> -->
     <!-- /.row -->
 
+    ${sixpacks.map(sixpack => {
+      return `
+      <div>
+        <h3>${sixpack.name}</h3>
+        ${sixpack.Beers.map(beer => {
+          return `
+          <img src="${beer.image}">
+          `
+        }).join('')}
+      </div>
+      `
+    }).join('')}
+
+
     <!-- Portfolio Section -->
     <h2>THE GOODS</h2>
 
