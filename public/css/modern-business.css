@@ -141,7 +141,8 @@ color: black;
 }
 
 .profile-img {
-  object-fit: contain;
+  height: 250px;
+  width: 254px;
 }
 
 .cursor {
