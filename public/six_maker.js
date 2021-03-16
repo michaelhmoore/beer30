@@ -5,7 +5,7 @@ $(function () {
     const $beerContainer = $('.right-box')
     const $submit = $('#submit-form')
 
-    $.get('http://localhost:3000/api/beers')
+    $.get('/api/beers')
     .then((data) => {
         beerData = data
         let beerHtml = renderBeers(data)
@@ -19,7 +19,7 @@ $(function () {
         const $description = $('#exampleFormControlTextarea1').val()
 
         e.preventDefault()
-        $.post('http://localhost:3000/six_maker' , {
+        $.post('/six_maker' , {
             title:$title,
             description: $description,
             beers: beerPack
