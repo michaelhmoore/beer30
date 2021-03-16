@@ -15,7 +15,7 @@ $(function () {
 
     $submit.on('submit', function (e) {
 
-        const $title = $('#exampleFormControlInput1').val()
+        const $title = $('#exampleFormControlInput1').val().toUpperCase()
         const $description = $('#exampleFormControlTextarea1').val()
 
         e.preventDefault()
