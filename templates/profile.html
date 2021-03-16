@@ -31,6 +31,30 @@
             </div>
             <div class="col-6 right-box">
                 Beer here
+                <div class="row">
+                    ${user.SixPacks.map(sixpack => {
+                      return `
+                    <div class="col-lg-4 col-sm-6 portfolio-item">
+                      <div class="card h-100">
+                        <div class="d-flex flex-wrap justify-content-center">
+                          ${sixpack.Beers.map(beer => {
+                            return `
+                            <img class="card-img-top beerz" src="${beer.image}" alt="">
+                            `
+                          }).join('')}
+                        </div>
+                        <div class="card-body text-center">
+                          <h4 class="card-title">
+                            ${sixpack.name}
+                          </h4>
+                          <p class="card-text ">${sixpack.description}</p>
+                        </div>
+                      </div>
+                    </div>
+                    `
+                  }).join('')}
+                </div>
+                
             </div>            
         </div>
     </div>
