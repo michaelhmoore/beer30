@@ -13,7 +13,10 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       SixPack.belongsTo(models.User)
       SixPack.belongsToMany(models.Beer, {
-        through: 'SixPackBeers'
+        through: {
+          model:'SixPackBeers',
+          unique:false
+        }
       })
     }
   };

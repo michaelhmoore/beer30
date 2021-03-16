@@ -11,7 +11,6 @@ router.get('/', async function (req, res, next) {
             include: db.Beer
         }
     })
-    console.log(user)
     res.render('profile',{
         partials,
         locals: {
