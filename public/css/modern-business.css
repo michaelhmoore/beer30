@@ -49,6 +49,7 @@ body {
 .bottom-box{
   grid-column: span 2;
   height: 30vh;
+  margin-bottom: 50px;
 }
 
 .beer-pack{
