@@ -43,7 +43,7 @@ body {
 
 .right-box{
   /* background-color: green; */
-  height: 50vh;
+  height: 55vh;
   text-align: center;
 }
 .bottom-box{
@@ -136,9 +136,15 @@ color: black;
   text-align: center;
 }
 
-.cursor: url('/YOUR_PATH/cursor.cur'),
-auto;
-
 .delete-btn {
   position: absolute;
 }
+
+.profile-img {
+  object-fit: contain;
+}
+
+.cursor {
+  url('/YOUR_PATH/cursor.cur'),
+  auto;
+} 

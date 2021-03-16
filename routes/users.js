@@ -97,9 +97,8 @@ router.post('/login', async (req, res) => {
     }
 
     req.session.user = user;
+    
     res.redirect('/');
-    
-    
     
 })
 
