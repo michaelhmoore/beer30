@@ -23,15 +23,16 @@
             <li class="breadcrumb-item">
             <a href="index.html">Home</a>
             </li>
-            <li class="breadcrumb-item active">Username Profile Page</li>
+            <li class="breadcrumb-item active">${user.username} Profile Page</li>
         </ol>
         <div class="row profile">
-            <div class="col-3 left-box">
+            <div class="col-3 l-box">
                 <h2>User Info</h2>
+                <h3>${user.username}</h3>
             </div>
-            <div class="col-6 right-box">
-                Beer here
-                <div class="row">
+            <div class="col-6 ">
+                <h2>Your Sixpacks</h2>
+                <div class="row flex-wrap">
                     ${user.SixPacks.map(sixpack => {
                       return `
                     <div class="col-lg-4 col-sm-6 portfolio-item">
