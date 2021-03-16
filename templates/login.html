@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="../public/css/modern-business.css">
-</head>
+         <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Custom styles for this template -->
+    <link href="/css/modern-business.css" rel="stylesheet">
+  </head>
 <body>
-    <h2>Login</h2>
+  ${nav}
+    <h2>Account Login </h2>
      <form method="POST" action="/users/login"> 
     <p>
       <label for="username">Username</label>
@@ -16,10 +20,23 @@
       <label for="password">Password</label>
       <input type="password" name="password" id="password" required>
     </p>
-    <button type="submit">Login Account</button>
+    <button class="btn btn-primary btn-lg" type="submit">Sign In</button>
     </form>
-    <div class="error"><br>
+    
+    <div class="error">
       ${error}
     </div>
-</body>
+    <p>Don't have an account? <a href="/users/register">Click here to register.</a></p>
+
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Beer:30™ LLC 2021</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
 </html>

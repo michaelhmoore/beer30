@@ -117,4 +117,18 @@ color: black;
 
 .AboutSeg{
   text-shadow: 2px, 2px !important;
+
+.beerz {
+  width: 30%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#theGoods {
+  text-align: center;
+}
+
+.my-4 {
+  text-align: center;
 }

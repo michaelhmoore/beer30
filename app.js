@@ -13,6 +13,7 @@ const usersRouter = require('./routes/users');
 const contactRouter = require('./routes/contact');
 const six_makerRouter = require('./routes/six_maker');
 const aboutRouter = require('./routes/about')
+const profileRouter = require('./routes/profile')
 
 const app = express();
 
@@ -45,6 +46,7 @@ app.use('/users', usersRouter);
 app.use('/contact', contactRouter);
 app.use('/six_maker', six_makerRouter);
 app.use('/about', aboutRouter);
+app.use('/profile', profileRouter)
 
 
 module.exports = app;
