@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link rel="stylesheet" href="../public/css/modern-business.css">
-</head>
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/modern-business.css" rel="stylesheet">
+  </head>
 <body>
+    ${nav}
     <h2>Registration</h2>
     <div>
      <form method="POST" action="/users/register"> 
@@ -29,5 +31,9 @@
       ${error}</div>    
     </div>
    
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 </html>
