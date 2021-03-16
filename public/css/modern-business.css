@@ -5,6 +5,7 @@
  */
 body {
   padding-top: 56px;
+  
 }
 
 .carousel-item {
@@ -96,11 +97,24 @@ body {
 }
 
 a {
- color: black;
+color: black;
 }
 
 .beerImg2{
   height:80%;
   width: 100%;
   object-fit: contain;
+}
+
+.img-beer {
+  max-width: 15% !important;
+}
+
+.col-lg-6{
+  font-size: 1.71rem !important;
+  
+}
+
+.AboutSeg{
+  text-shadow: 2px, 2px !important;
 }
