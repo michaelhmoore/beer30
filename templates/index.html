@@ -137,12 +137,11 @@
     <div class="col-lg-4 col-sm-6 portfolio-item">
       <div class="card h-100">
         <div class="d-flex flex-wrap justify-content-center">
-          <img class="card-img-top beerz" src="${sixpack.Beers[0].image}" alt="">
-          <img class="card-img-top beerz" src="${sixpack.Beers[1].image}" alt="">
-          <img class="card-img-top beerz" src="${sixpack.Beers[2].image}" alt="">
-          <img class="card-img-top beerz" src="${sixpack.Beers[3].image}" alt="">
-          <img class="card-img-top beerz" src="${sixpack.Beers[4].image}" alt="">
-          <img class="card-img-top beerz" src="${sixpack.Beers[5].image}" alt="">
+          ${sixpack.Beers.map(beer => {
+            return `
+            <img class="card-img-top beerz" src="${beer.image}" alt="">
+            `
+          }).join('')}
         </div>
         <div class="card-body text-center">
           <h4 class="card-title">

@@ -95,9 +95,11 @@ router.post('/login', async (req, res) => {
         locals: { error: "<h4 style='color:red;  '>Incorrect password. Please try again.</h4>" }
       });
     }
+
+    req.session.user = user;
     res.redirect('/');
     
-    req.sessions.user = user;
+    
     
 })
 
