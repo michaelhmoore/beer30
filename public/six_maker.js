@@ -26,6 +26,7 @@ $(function () {
             
         })
         .then((result) => {
+            
         } )
     })
 })
@@ -56,7 +57,6 @@ function saveToSixPack(id) {
         while(!($sixpackBox.html() === ''))
         {
             count ++ 
-            console.log('run')
              $sixpackBox = $(`.beer-${count}`)
 
         }
@@ -71,5 +71,6 @@ function saveToSixPack(id) {
 function deleteBeer(box){
     const $beerBox = $(`.beer-${box}`)
     $beerBox.html("")
+    beerPack.splice(box-1,1)
     count = box
 }
