@@ -50,7 +50,7 @@ function saveToSixPack(id) {
         return ""
     }
 
-    $.get(`http://localhost:3000/api/beers/${id}`)
+    $.get(`/api/beers/${id}`)
     .then((data) => {
         beerData = data
         let $sixpackBox = $(`.beer-${count}`)
