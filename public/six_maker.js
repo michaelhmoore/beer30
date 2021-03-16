@@ -1,7 +1,9 @@
 
 count = 1
+beerPack = []
 $(function () {
     const $beerContainer = $('.right-box')
+    const $submit = $('#submit-form')
 
     $.get('http://localhost:3000/api/beers')
     .then((data) => {
@@ -10,7 +12,26 @@ $(function () {
 
         $beerContainer.html(beerHtml)
     })
+
+    $submit.on('submit', function (e) {
+
+        const $title = $('#exampleFormControlInput1').val()
+        const $description = $('#exampleFormControlTextarea1').val()
+
+        e.preventDefault()
+        $.post('http://localhost:3000/six_maker' , {
+            title:$title,
+            description: $description,
+            beers: beerPack
+            
+        })
+        .then((result) => {
+            
+        } )
+    })
 })
+
+
 
 function renderBeers(beerArray){
     const beerHtmlArray = beerArray.map((currBeer) => {
@@ -24,16 +45,32 @@ function renderBeers(beerArray){
 }
 
 function saveToSixPack(id) {
-
+    if(count ==7){
+        alert("Beer Pack is Full")
+        return ""
+    }
 
     $.get(`http://localhost:3000/api/beers/${id}`)
     .then((data) => {
         beerData = data
-    
-        const $sixpackBox = $(`.beer-${count}`)
-        $sixpackBox.html(`<img class ="beerImg2" src = "${beerData.image}">`)
+        let $sixpackBox = $(`.beer-${count}`)
+        while(!($sixpackBox.html() === ''))
+        {
+            count ++ 
+             $sixpackBox = $(`.beer-${count}`)
+
+        }
+        $sixpackBox.html(`<button type="button" class="btn btn-danger delete-btn" onclick = "deleteBeer('${count}')">X</button><img class ="beerImg2" src = "${beerData.image}">`)
         count++
+        beerPack.push(id)
     })
+}
 
 
+
+function deleteBeer(box){
+    const $beerBox = $(`.beer-${box}`)
+    $beerBox.html("")
+    beerPack.splice(box-1,1)
+    count = box
 }
